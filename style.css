@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #655DBB;
+    --primary-color: #ECF2FF;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+.dificuldade{
+    margin-top: 1.5rem;
+}
+
+.dificuldade ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dificuldade li{
+    margin: 0.5rem 0.25rem 0 0.25rem;
+}
+
+
+
+.mensagem{
+    margin-top: 1.5rem;
+}
+
+h4{
+    font-size: 1.5em;
+    margin-bottom: -1.5rem;
+}
+
+.box{
+    display: inline-block;
+    margin: 1.5rem 0;
+    font-size: 4em;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.btn-jogar{
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.btn-jogar:hover{
+    color: black;
+}
+
+.btn-jogar:active{
+    background-color: lightgray;
+    color: var(--bg-color);
+}
+
+@media screen and (max-width: 700px){
+    body{
+        padding: 0 20px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .box{
+        font-size: 2em;
+    }
+}
